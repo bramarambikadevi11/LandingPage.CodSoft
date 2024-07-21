@@ -1,0 +1,161 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    line-height: 1.6;
+    background: url('https://www.sliderrevolution.com/wp-content/uploads/revslider/gym2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+    position: relative;
+}
+
+/* Add a Semi-transparent Overlay to Improve Readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(44, 62, 80, 0.9); /* Semi-transparent background */
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    color: #585c5f;
+}
+
+/* Main Content Styling */
+main {
+    margin: 20px 0;
+}
+
+main section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Section Specific Background Images */
+#intro {
+    background-image: url('https://www.itl.cat/pngfile/big/37-371491_top-fitness-wallpapers-hd-gym.jpg');
+}
+
+#services {
+    background-image: url('https://png.pngtree.com/background/20230516/original/pngtree-gym-with-many-weights-in-dark-lighting-picture-image_2611113.jpg');
+}
+
+#trainers {
+    background-image: url('https://gplus.to/wp-content/uploads/2024/06/6-Benefits-of-Using-a-Personal-Trainer-to-Reach-Your-Fitness-Goals.png');
+}
+
+
+#contact {
+    background-image: url('https://individualfitnessllc.com/wp-content/uploads/2020/10/gym.jpg');
+}
+
+main section h2 {
+    margin-bottom: 20px;
+}
+
+main .service, main .trainer, main .testimonial {
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(44, 62, 80, 0.9); /* Semi-transparent background */
+    color: #ecf0f1;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+/* Image Styling */
+main section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    main section {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    main .service, main .trainer, main .testimonial {
+        display: inline-block;
+        width: 30%;
+        margin: 1.66%;
+        vertical-align: top;
+    }
+}
